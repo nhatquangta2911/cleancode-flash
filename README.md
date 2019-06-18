@@ -65,7 +65,7 @@
 
       3.5. ***What Is Clean Code?***
       ####
-      - ...
+      - Some keywords: *elegant, efficient, straightforward logic, does one thing, simple, direct, well-written prose, create tensions, can be read, enhance by others, one way rather than many ways for doing one thing, proper error handling, clear and minimal API, CARE, runs all the tests, no duplication, minimize the number of entities (classes, methods, functions), make it looks like a language was made for the problem, make it simple as hell =))*
       ####
  
 ## Chapter 2: Meaningful Names
