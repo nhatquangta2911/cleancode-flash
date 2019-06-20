@@ -104,6 +104,55 @@
       ####
  
 ## Chapter 2: Meaningful Names
+   ###
+   0. ***Introduction***
+      #####
+      - We name our variables, our functions, our arguments, classes and packages.
+      - We name our source files and the directories.
+      - We name our .jar file and .war file
+      - name and name and name...
+      #####
+   1. ***Use Intention-Revealing Names*** (Tên thể hiện được ý định)
+      #####
+      - *"Choosing good names takes time but saves more than it takes"*
+      - The problem is not the **simplicity** of the code but the **implicity** of the code (The degree to which the context is not explicit in the code itself)
+      #####
+      ```java
+      public List<int[]> getThem() {
+      List<int[]> list1 = new ArrayList<int[]>();
+      for (int[] x : theList)
+         if (x[0] == 4)
+         list1.add(x);
+         return list1;
+      }
+      ```
+      #####
+      - The code implicitity requires that we know the answers to questions:
+         1. theList ?
+         2. Zero subscript theList[0] ?
+         3. === 4 ?
+         4. How to use return ?
+      ##### 
+      ```java
+      public List<int[]> getFlaggedCells() {
+      List<int[]> flaggedCells = new ArrayList<int[]>();
+      for (int[] cell : gameBoard)
+         if (cell.isFlagged())
+         flaggedCells.add(cell);
+         return flaggedCells;
+      }
+      ```
+      ######
+      - Notice that the simplicity of the code has not changed. It still has exactly the same number of operators and constants, with exactly the same number of nesting levels. ***But the code has become much more explicit.***
+      ###
+
+   2. ***Avoid Disinformation*** (false information - delibaretely)
+      #####
+      -
+      #####
+   
+   ###
+
 
 ## Chapter 3: Functions
 
