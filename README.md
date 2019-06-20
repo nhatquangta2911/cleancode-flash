@@ -4,6 +4,8 @@
    - Learning Craftsmanship:
       - Knowledge (principles, patterns, practices, heuristics)
       - Work (Hard work, must sweat over it, watch others fail).
+   ###
+***
 
 ## Chapter 1: Clean Code
 
@@ -68,20 +70,20 @@
       - Some keywords: *elegant, efficient, straightforward logic, does one thing, simple, direct, well-written prose, create tensions, can be read, enhance by others, one way rather than many ways for doing one thing, proper error handling, clear and minimal API, CARE, runs all the tests, no duplication, minimize the number of entities (classes, methods, functions), make it looks like a language was made for the problem, make it simple as hell =))*
       ####
 
-      4. ***School of Thought***
+   4. ***School of Thought***
       ####
       - There are other school, other masters out there that have as much claim to professionalism as this book authors.
       - Something would be very controversial. Probably not agree with all of them.
       - The recommendations in this book are things they have thought long and hard about. They have learned them through decades of exprience and repeated trial and error. Thus, **whether you agree or disagree. it would be a shame if you did not see, and respect, their point of view.**
       ####
 
-      5. We Are Authors
+   5. ***We Are Authors***
       ####
       - Basically, authors are responsible for communicating well with their readers. The next time you write a line of code, remember you are an author, writing for readers who will judge your effort.
       - *The code you are trying to write today will be hard or easy to write depending on how hard or easy the surrounding code is to read. So if you want to go fast, if you want to get done quickly, **if you want your code to be easy to write, make it easy to read***
       ####
 
-      6. The Boy Scout Rule
+   6. ***The Boy Scout Rule***
       ####
       **"Leave the campground cleaner than you found it"**
       ####
@@ -93,7 +95,7 @@
          - Clean up one composite *if* statement
       ####
 
-      7. Conclusion
+   7. ***Conclusion***
       ####
       - This book can not make you a good programmer. Can not give the "code-sense"
       - **This book shows the thought processes, the tricks, techniques, and tools**
@@ -101,8 +103,8 @@
       - You will see lists of heuristics, disciplines and techniques.
       - You will see a butt-load of code, example after example.
       - **PRACTICE MAKES PERFECT!**
-      ####
- 
+      ###
+***
 ## Chapter 2: Meaningful Names
    ###
    0. ***Introduction***
@@ -148,7 +150,7 @@
 
    2. ***Avoid Disinformation*** (false information - delibaretely)
       #####
-      -
+      - 
       #####
    
    ###
