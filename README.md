@@ -224,9 +224,52 @@
       ###
       - *WORK_DAYS_PER_WEEK* is much easier to find than all the places where **5** was used and filter the list down to just the intances with the intended meaning.
       ##
-   6. ***Avoid Encodings***
+   6. ***Avoid Encodings*** (Tránh trùng bảng mã)
       #####
-      
+      - We have enough **encodings** (bảng mã hóa) to deal with without adding more to our burden.
+      #####
+      - ***Member Prefixes***: Don't need to prefix member variables with **m_** anymore. Your classes and functions should be small enough that you don't need them. The more we read the code, the less we see the prefix.
+      #####
+      - ***Interfaces and Implementations***
+         #####
+         - IShapeFactory or ShapeFactory for Abstract Factory ?
+         #####
+         - We don't want our clients knows we send them an interface. We just want to give them a ShapeFactory.
+         #####
+         - Thus, you must encode either the interface or the implementation.
+         #####
+      #####
+      - ***Avoid Mental Mapping***
+         #####
+         - There is a problem with single-letter variable names. Certainly a loop counter may be named **i, j** or **k**. So traditional!
+         #####
+         - One difference between a smart programmer and a professional programmer is that the professional understands that **clarity is king**. Professionals use their powers for good and write code that others can understand.
+         #####
+      #####
+      - ***Class Names***: Classes and objects should have noun or noun phrase names like *Customer, WikiPage, Account, AddressParser*. Avoid words like *Manager, Processor, Data, Info* in the name. A class name should not be a verb.
+      #####
+      - ***Method Names***
+         #####
+         - Methods should have verb or verb phrase names like *postPayment, deletePage, handleSubmit, save*
+         #####
+         - *getName, setName, isPaid* is the common standards.
+         #####
+         ```java
+         Complex fulcrumPoint = new Complex(23.0); //BAD
+         ``` 
+         Use this: (Keep this constructor private)
+         ```java
+         Complex fulcrumPoint = Complex.FromRealNumber(23.0); //Much more better
+         ```
+         #####
+      #####
+      - ***Don't be cute***
+         #####
+         - *HolyHandGrenade* with *DeleteItems* ??
+         - *whack()* or *kill()* ??
+         - *eatMyShorts()* or *abort()* ??
+         - **Say what you mean. Mean what you say.**
+         #####
       #####
 
 
