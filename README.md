@@ -270,6 +270,50 @@
          - *eatMyShorts()* or *abort()* ??
          - **Say what you mean. Mean what you say.**
          #####
+      - ***Pick One Word per Concept***
+         #####
+         - fetch, retrieve, get ??
+         - controller, manager ??
+         - DeviceManager & ProtocolController ?? (Why not the same ??)
+         #####
+      - ***Don't Pun*** (Chơi chữ)
+         #####
+         - **add**
+         - In case you want put a single param into a collection ??
+         - Why you don't use **insert, append**
+         #####
+      - ***Use Solution Domain Names***
+         #####
+         - Those who read your code will be **programmer**, so go ahead and use CS terms, algorithm names, pattern names, math terms, and so forth.
+         #####
+         - How about **JobQueue** using instead of **AccountVisitor** =))
+         #####
+         - *Like a big solution when reading this name =))*
+         #####
+
+      - ***Use Problem Domain Names***
+         #####
+          When there is no "programmer-eese" for what you're doing, use the name from *problem domain*. At least the programmer who maintains your code later can ask a domain expert what it means.
+         #####
+      
+      - ***Add Meaningful Context***
+         #####
+         - firstName, lastName, street, houseNumber, city, state, zipcode. Taken together it's pretty clear that they form an address. But what if you just saw the **state** outside alone in a method?
+         #####
+         - You can add context by:
+            #####
+            - Using prefixes: addrFirstName, addrLastName, addrState, and so on.
+            - Better solution is to create a class named **Address**.
+            #####
+         #####
+      - ***Don't Add Gratuitous Context*** (vô nghĩa, vu vơ, vô cớ)
+         #####
+         - "Gas Station Deluxe" - GSD
+         - MailingAddress and GSDAccountAddress ?
+         - Address, PostalAddress, MAC, URI,...
+         #####
+
+
       #####
 
 
