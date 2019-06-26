@@ -311,17 +311,51 @@
          - "Gas Station Deluxe" - GSD
          - MailingAddress and GSDAccountAddress ?
          - Address, PostalAddress, MAC, URI,...
-         #####
+         ##
+      **If we pay off in the short term and continue to pay in the long run!!!**
 
-
-      #####
-
-
-   ###
-
+      ##
 
 ## Chapter 3: Functions
+   ###
+   - In the early days of programming we composed out system of **routines and subroutines**. Then we composed our system of **programs and subprograms and functions**. Nowadays only the function survives from those early days.
+   ###
+   - Problems: Too many different levels of **abstraction**?? Too many strange, curious, and odd functions calls mixed in with doubly nested **if** statements controlled by flags.
+   ###
+1. ***SMALL !***
+   ####
+   - The first rule of functions is that they should be small. The second rule of functions is that *they should be smaller than that.*
+   ######
+   - Every function was just two or three or four lines long. Each was transparently obvious. **Each told a story.**
+   ###
+2. ***Blocks and Indenting***
+   ####
+   - Blocks within **if, else, while** statements, should be one line long. Probably that line should be a function call.
+   ####
+   - Functions should not be large enough to hold nested structures. Thus, the **indent level** of a function should not be greater than 1 or 2. 
+   ###
+3. ***Do One Thing***
+   ####
+   - ***FUNCTIONS SHOULD DO ONE THING. THEY SHOULD DO IT WELL. THEY SHOULD DO IT ONLY.***
+   ####
+   HOW???
+   ####
+   We can describe the function by describing it as a brief **TO** paragraph:
+   ##
+   ~ **TO** DoSomethingInSpecific..., we check...., and if so....In either case....      
+   ##
+   In the end, the reason we write functions is to **decompose** a larger concept into a set of steps at next level of abstraction. (In other words, we decompose the name of the function). So it is clearly doing more than one thing.
+   ##
+   Another way to know that a function is doing more than "one thing" is if you can extract another function from it **with a name** that is not merely a restatement of its implementation.
+   ##
+   ***Sections within Functions***: If you can divided the function into **sections** such as *declarations, initializations and sieve (filter)*. This is an obvious sympton of doing more than one thing. Functions that do one thing cannot be reasonably divided into sections.
+   ##
+4. ***One Level of Abstraction per Function***
+   ###
+   TO BE CONTINUED...
+   ###
 
+   ##
 ## Chapter 4: Comments
 
 ## Chapter 5: Formatting
