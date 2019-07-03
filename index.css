@@ -1,5 +1,7 @@
 body {
    font-family: 'Coming Soon', cursive;
+   background-color: #fdfdfd;
+   color: #272727;
 }
 
 .home-container {
@@ -25,6 +27,19 @@ body {
 
 h1 {
    width: 100%;
+   color: #111;
+   margin: 0.4em 0;  
+}
+
+.button-home {
+   color: #fbf700;
+   font-weight: bold;
+}
+
+span {
+   color: #3681B8;
+   font-weight: bold;
+   font-size: 1em;
 }
 
 .right-content {
