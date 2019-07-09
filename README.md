@@ -629,13 +629,70 @@
       ###
    7. ***Clarification***
       ###
-      TO BE CONTINUED...
+      When its parts of the standard library, or in code that you cannot alter, then a helpful clarifying comment can be useful. (a aa ab bb b...)
+      ###
+      So before writing comments like this, take care that there is no better way, and then take even more care that they are accurate.
+      ###
+   8. ***Warning of Consequences***
+      ###
+      Sometimes it is useful to warn other programmers about certain consequences. Like example, "Don't run unless you have some time to kill" =))
+      ###
+      Nowadays, of course, we'd turn off the test case by using the @Ignore attribute with an appropriate expanatory string @Ignore("Takes too long to run")
+      ###
+      Another example: "SimpleDateFormat is not thread safe, so we nees to create each instance independently." 
+      ###
+      But the comment, as given here, is **perfectly reasonable**. It will prevent some overly eager programmer from using a static initializer in the name of efficiency.
+      ###
+   9. **TODO Comments**  
+      ###
+      Explains why the function has a degenerate implementation and what that ***function's future*** should be.
+      ###
+      Example: 
+      ```java
+      //TODO-MdM these are not needed
+      // We expect this to go away when we do the checkout model.
+      ```
+      ###
+      Still, you don't want your code to be littered with TODOs. So scan through them **regularly** and **eliminate** the ones you can.
       ###
 
+   10. ***Amplification*** (Expand) the importance of something that may otherwise seem inconsequential.
+   ###
+   11. ***Bad comments***
+   ###
+   Usually they are **crutches** or **excuses** for poor code or justifications for insufficient decision.
+   ###
+   12. ***Mumbling*** (lẩm bẩm) 
       ###
+      ```java
+      try
+      {
+         ...
+      }
+      catch (IOException)
+      {
+         // No properties files means all defaults are loaded 
+      }
+      ```
+   
+   ###
+      ???
+      Was the author trying to comfort himself about the fact that he was leaving the catch block empty? Or this is the scary possibility was the author trying to tell himself to come back here later on and write the code that would load the defaults??? 
+   ### 
+   13. ***Redundant Comments***
+   ###
+   It might not more informative than the code. It does not justify the code, or provide intent or rationale (reason). **It is not easier than the code.**
+   ###
+   These comments serve only to clutter (massy) and obscure the code. They serve no documentary purpose at all.
+   ###
+   <p align="center">
+      <img src="images/chapter4/redundant-code.png" />  
+   </p>
+   
+   ###
    
 
-
+##
 ##
 ## Chapter 5: Formatting
 
