@@ -690,9 +690,125 @@
    </p>
    
    ###
-   
+14. ***Misleading Comments*** 
+   ###
+15. ***Mandated Comments (Obligate)***
+      ###
+      It is just plan silly to have a rule that says that every function must have a javadoc, or every variable must have a comment. Comments like this just clutter up the code, propagate lies, and lend to general confusion and disorganization.
+      ###
+16. ***Journal Comments***
+      ###
+      <p align="center">
+      <img src="images/chapter4/journal-comments.png" />  
+      </p>
 
-##
+      ###
+17. ***Noise Comments***
+      ###
+      Sometimes you see comments that are nothing but ***noise***. They restate the obvious and provide no new information.
+      ###
+      How about
+      ###
+      ```java
+      /** The day of the month. */
+      private int dayOfMonth;
+      ```
+      ###
+      And this bullcrap =))
+      ###
+      ```java
+      try
+      {
+         response.closeAll();
+      }
+      catch(Exception e1)
+      {
+         // Give me a break 
+      }
+      ```
+      ###
+18. ***Scary Noise***
+      ###
+      Best Cut-Paste =))
+      ##### 
+      ```java
+      /** The licenceName */
+      private String lincenceName;
+      ```
+      ###
+      If authors aren't paying attention when comments are written (or pasted), why should readers be expected to profit from them ?
+      ###
+19. ***Don't Use a Comment When You Can Use a Function or a variable***
+      ###
+      The original code may have written the comment first (unlikely) and then writte the code to ***fulfill*** the comment. However, the author should then have refactored the code, so that the comment could be removed.
+      ###
+20. ***Position Markers***
+      ###
+      ```java
+      // Actions ///////////////////////////////////
+      ```
+      ###
+      A banner =))
+      ###
+      Startling and obvious if you don't see banners very ofte. So use them very ***sparingly***, and only when the benefit is significant. If you overuse banners, they'll fall into the background noise and be ignored.
+      ###
+21. ***Closing Brace Comments & Attributions and Bylines***
+      ###
+      If you find yourself wanting to mark your closing braces, try to ***shorten*** your functions instead.
+      ###
+      <p align="center">
+      <img src="images/chapter4/closing-braces-comments.png" />  
+      </p>
+   ###
+22. ***Commented-Out Code***
+      ###
+      Commented-out code gathers like ***dregs*** at the bottom of a bad bottle of wine.
+      ###
+      Why are those lines of code commented? Are they important? Were they left as reminders for some imminent change? (sắp xảy ra)
+      ###
+23. ***HTML Comments***
+      ###
+       <p align="center">
+      <img src="images/chapter4/closing-braces-comments.png" />  
+      </p>
+
+      ###
+24. ***Nonlocal Information***
+      ###
+      If you must write a comment, then make sure it describes the code it appears near. Don't offer systemwide information in the context of a local comment.
+      ###
+      ```java
+      /**
+      * Port on which fitnesse would run. Defaults to <b>8082</b>.
+      *
+      * @param fitnessePort
+      */
+      public void setFitnessePort(int fitnessePort) {
+         this.fitnessePort = fitnessePort;
+      }
+      ```
+      There is no guarantee that this comment will be changed when the code contaiing the fault is changed. (Forgot to change the default PORT 8082)
+      ###
+25. ***Too Much Information***
+      ###
+      Don't put interesting historical discusstions or irrelevant descriptions of details into your comments. Like a shitload of mass.
+      ###
+      <p align="center">
+      <img src="images/chapter4/too-much-information.png" />  
+      </p>
+
+      ###
+26. ***Inobvious Connection***
+      ###
+      ###
+27. ***Function Headers***
+      ###
+      ###
+28. ***Javadocs in Nonpublic Code***
+      ###
+      ###
+29. ***Example***
+## 
 ##
 ## Chapter 5: Formatting
 
