@@ -800,17 +800,36 @@
       ###
 26. ***Inobvious Connection***
       ###
+      - The connection between a comment and the code it describes should be obvious. If you are going to the trouble to write a comment, then at least you'd like the reader to be able to look at the comment and the code and understand what the comment is talking about.
+      ###
+      - Why? Does it reate ... ? Is ... the ... ? The purpose of the comment is to explain the code that does not explain itself. It is a pity when a comment needs its own explaination.
       ###
 27. ***Function Headers***
       ###
+      Short functions don't need much description. A well-chosen name for a small function that does one thing is usually better than a comment header.
       ###
 28. ***Javadocs in Nonpublic Code***
       ###
+      As useful as javadocs are for public APIs, they are anathema to code that is not intended for public comsumption (consuming).
+      ###
+      ```java
+      /** only for public
+      * ...
+      * @param ...
+      * @return ...
+      */
+      ```
       ###
 29. ***Example***
+      ###
+      I could find no simple variable name, nor any different coding structure that made this point clear. On the other hand, the use of the square root might be a conceit.
+      ###
+
 ## 
-##
 ## Chapter 5: Formatting
+   ##
+   
+   ##
 
 ## Chapter 6: Objects and Data Structures
 
