@@ -827,10 +827,81 @@
 
 ## 
 ## Chapter 5: Formatting
-   ##
-   
-   ##
+   ###
+   When people look under the hood, we want them to be impressed with the neatess, consistency, and attention to detail that they perceive (retrieve).
+   ###
+   We want their eyebrows to rise as they scroll through the modules. Not the code like was written by a bevy (group, gang) of drunken sailors.
+   ###
+   You should take care that your code is nicelty formatted. You should choose a set of simple rules that govern the format of your code, and then you should consistenly apply those rules. 
+   ###
+   If you are working on a team, then the team should agree to a single set of formatting rules and all members should comply. It helps to have an automated tool that can apply those formatting rules for you.
+   ###
+   1. ***The Purpose of Formatting***
+      ###
+      Code formatting is about ***communication***, and communication is the professional developer's first order of business.
+      ###
+      Perhaps you thought that ***"getting it working"*** was the first order of business. I hope by now, however, this book has disabused you of that idea. The functionality that you create today has a good chance of changing in the next release, but the ***readability*** of your code will have a ***profound effect*** (deep effect) on all the changes that will ever be made.
+      ###
+      ***Maintainabllity*** and ***exxtensibility*** long after the original code has been changed beyond regconition.
+      ###
+   2. ***Vertical Formating***
+      ###
+      Small files are usually easier to understand than large files are.
+      ###
+      ***The Newspaper Metaphor:*** Think of a well-written newspaper article. You read it vertically. At the top you expect a headline that will tell you what the story is about and allows you to ***decide*** whether it is something you want to read. The first paragraph gives you a synopis of the whole story, hiding all the details while giving you a broad-brush concepts. As you continue downward, the details increase until you have all the dates, names, quotes, claims and others.
+      ###
+      We would like a source file to be like a newspaper. ***The name should be simple but self-explanatory***. The name, by itself, should be sufficient to tell us whether we are in the right module or not.
+      ###
+      The topmost parts of the source file should provide the high-level concepts and algorithms. ***Detail should increase as we move downward, until at the end we find the lowest level functions and details*** in the source file.
+      ###
+      If the newspaper were just one long story containing a disorganized agglomeration of facts, dates, names then we simply would not read it.
+      ###
+      2.1. ***Vertical Openness Between Concepts***
+      ###
+      Each line represents an expression or a clause, and each group of lines represents a complete ***thought***. Those thoughts should be separated from each other with ***blank lines***
+      ###
+      <p align="center">
+      <img src="images/chapter5/vertical-openness-between-concepts.png" />  
+      </p>
 
+      ###
+      Separate the package declaration, the import, and each of the functions.
+      ###
+      2.2. ***Vertical Density***
+      ###
+      If openness separates concepts (thoughts), then vertical density implies close ***association***. So lines of code that are tightly related should appear vertically dense. 
+      ###
+      ```java
+      public class ReporterConfig {
+         private String m_className;
+         private List<Property> m_properties = new ArrayList<Property>();
+
+         public void addProperty(Property property) {
+            m_properties.add(property);
+         }
+      }
+      ```
+      ###
+      I can look at it and see that is class with two variables and a method, without having to move my head or eyes much.
+      ###
+      2.3. ***Vertical Distance***
+      ###
+      This is frustrating because you are trying to understand ***what*** the system does, but you are spending your time and mental energy on trying to ***locate*** and ***remember*** where the pieces are.
+      ###
+      2.4. ***Variable Declarations***
+      ###
+      Variables should be declared as ***close to their usage*** as possible. Because our functions are very short, local variables should appear at the top of each function, as in the ***longish*** (-ish: quite) function.
+      ###
+       <p align="center">
+      <img src="images/chapter5/variable-declarations.png" />  
+      </p>
+      ###
+      2.5. ***Instance variables*** 
+      ###
+      Should be declared at the top of the class. They are ***used by many***, if not all, of the methods of the class. 
+      ###
+
+##
 ## Chapter 6: Objects and Data Structures
 
 ## Chapter 7: Error Handling
